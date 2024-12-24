@@ -38,7 +38,11 @@ $(document).ready(function() {
                 duration: 3000,
                 easing: 'swing',
                 step: function(now) {
-                    $(this).text(Math.ceil(now));
+                    if ($(this).data('target') % 1 === 0) {
+                        $(this).text(Math.floor(now));
+                    } else {
+                        $(this).text(now.toFixed(1));
+                    }
                 }
             });
         });
