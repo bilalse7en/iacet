@@ -665,3 +665,12 @@ h1, h2, h3, h4, h5, h6,
     background-size: cover;
 }
 /* About Us page */
+
+/* our brands */
+
+.explore-our-expertise img {
+    max-width: 180px;
+    object-fit: contain;
+}
+
+/* our brands */
