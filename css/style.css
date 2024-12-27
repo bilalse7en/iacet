@@ -1,4 +1,3 @@
-/* Typography */
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -11,17 +10,92 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 600;
 }
 
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background: #fdfdfd;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .circle {
+    fill: none;
+    stroke-width: 4;
+    animation: rotate 2s linear infinite;
+  }
+
+  .outer {
+    stroke: #60a5fa;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    animation: dash 2s ease-in-out infinite;
+  }
+
+  .inner {
+    stroke: #2563eb;
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+    animation: dash 2s ease-in-out infinite reverse;
+    opacity: 0.6;
+  }
+
+  .dots {
+    fill: #60a5fa;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 314;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -314;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 9999; /* Ensure it stays on top */
+}
+
 /* Navigation Banner */
 /* Remove these classes as they're replaced by Bootstrap classes */
 .nav-banner {
-    background-image: url(./../images/home-bg.png);
+    background-image: url(./../images/home/home-bg.webp);
     background-position-y: bottom;
     background-position-x: center;
     background-size: cover;
 }
 
 .home-banner-bg {
-    background-image: url(./../images/home-top-bg.png);
+    background-image: url(./../images/home/home-top-bg.webp);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
@@ -36,7 +110,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar .nav-link {
-    color: #333 !important;
+    color: #333;
     font-weight: 500;
     padding: 0px!important;
     margin: 10px;
@@ -78,7 +152,7 @@ h1, h2, h3, h4, h5, h6,
     width: 24px;
     height: 2px;
     position: absolute;
-    left: 0;
+    left: 5px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -135,6 +209,14 @@ h1, h2, h3, h4, h5, h6,
     color: #333;
 }
 
+.active-link {
+    color: #0d6efd!important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0d6efd;
+}
+
 .navbar-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
@@ -148,9 +230,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Hover effects */
-.navbar-nav .nav-item .nav-link:not(:hover) {
-    opacity: 0.8;
-}
 
 .navbar-nav .nav-item .nav-link:hover::before {
     width: 100%;
@@ -245,8 +324,12 @@ h1, h2, h3, h4, h5, h6,
     padding: 0 40px;
 }
 
+.slider-item {
+    text-align: -webkit-center;
+}
+
 .slider-item img {
-    max-height: 200px;
+    max-height: 300px;
     width: 200px;
     object-fit: contain;
 }
@@ -271,7 +354,7 @@ h1, h2, h3, h4, h5, h6,
 /* Responsive */
 @media (max-width: 767px) {
     .network-slider { padding: 0 20px; }
-    .slider-item img { max-height: 50px; }
+    .slider-item img { max-height: 200px; }
     .stats__number { font-size: 36px; }
     .stats__symbol { font-size: 20px; }
     .stats__label { font-size: 16px; }
@@ -401,7 +484,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .we-work-with {
-    background-image: url(./../images/we-work-with-bg.png);
+    background-image: url(./../images/home/we-work-with-bg.webp);
     background-size: 100% 100%;
     background-position-y: bottom;
     background-repeat: no-repeat;
@@ -409,7 +492,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .customized-training{
-    background-image: url('./../images/customized-training-bg.png'); /* Background image for the section */
+    background-image: url('./../images/home/customized-training-bg.webp');
     background-size: cover;
     background-position-x: center;
     background-position-y: 100%;
@@ -446,9 +529,9 @@ h1, h2, h3, h4, h5, h6,
 .our-reputation .slider-item {
     padding: 20px;
     margin: 0px 10px 30px 10px;
-    border-radius: 8px; /* Optional rounded corners */
+    border-radius: 8px;
     background: #FBFBFB;
-    transition: box-shadow 0.3s; /* Smooth shadow transition */
+    transition: box-shadow 0.3s;
 }
 
 .our-reputation .slider-item:hover {
@@ -458,7 +541,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .our-reputation .rating > i{
-    font-size: 1.2rem; /* Adjust font size for ratings */
+    font-size: 1.2rem;
     margin: 10px 0;
     color: #156CD7;
 }
@@ -475,7 +558,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .our-reputation .slider-navigation {
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .our-reputation .reputation-slick-prev, 
@@ -492,7 +575,7 @@ h1, h2, h3, h4, h5, h6,
 
 .our-reputation .reputation-slick-prev:hover, 
 .our-reputation .reputation-slick-next:hover {
-    color: #007bff; /* Darker shade on hover */
+    color: #007bff;
 }
 
 /* Responsive adjustments */
@@ -502,7 +585,7 @@ h1, h2, h3, h4, h5, h6,
     }
 
     .our-reputation .rating {
-        font-size: 1rem; /* Smaller font size for mobile */
+        font-size: 1rem;
     }
 
     .our-reputation .reputation-slick-prev, 
@@ -547,6 +630,11 @@ h1, h2, h3, h4, h5, h6,
 .footer-section .list-unstyled a {
     text-decoration-line: none;
 }
+
+.footer-section .list-unstyled a:hover {
+    text-decoration-line: underline;
+}
+
 .footer-section .subscribe-input .form-control {
     background: #6B6B6B;
 }
@@ -568,3 +656,12 @@ h1, h2, h3, h4, h5, h6,
 .footer-section .subscribe-input button i{
     transform: rotate(320deg);
 }
+
+/* About Us page */
+.about-us-nav-banner {
+    background-image: url(./../images/about-us/about-us-banner-bg.png);
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+}
+/* About Us page */

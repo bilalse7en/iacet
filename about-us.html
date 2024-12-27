@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Training Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader-container">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <!-- Outer rotating circle -->
+          <circle class="circle outer" cx="50" cy="50" r="45" />
+          
+          <!-- Inner rotating circle -->
+          <circle class="circle inner" cx="50" cy="50" r="25" />
+          
+          <!-- Pulsing dots -->
+          <circle class="dots" cx="50" cy="5" r="3" />
+          <circle class="dots" cx="95" cy="50" r="3" />
+          <circle class="dots" cx="50" cy="95" r="3" />
+          <circle class="dots" cx="5" cy="50" r="3" />
+        </svg>
+      </div>
+    <!-- Progress Bar -->
+    <div class="progress" id="progress-bar">
+        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <section class="about-us-nav-banner">
+        <div class="home-banner-bg">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/home/certified-header-logo.webp" alt="Logo" width="120">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link active-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./our-brands.html">Our Brands</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="home-banner">
+                <div class="container py-4">
+                    <div class="row w-100 mx-0 align-items-center">
+                        <div class="col-lg-6">
+                            <h2 class="h2">About Us</h2>
+                            <h1 class="display-4">Empowering Professionals with Industry-Leading Training and Certifications</h1>
+                            <p class="lead">At Industrial Certified Training, we bridge the gap between ambition and achievement by delivering cutting-edge technical training and certification programs. Our goal is to equip individuals and businesses with the skills and knowledge needed to thrive in competitive industries.</p>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="images/about-us/about-us-banner-img.png" alt="Training" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row w-100 mx-0">
+                <div class="col-lg-6 pt-lg-5">
+                    <h4 class="h4">Our Mission</h4>
+                    <h2 class="h2">TO EQUIP LEARNERS WITH THE SKILLS TO ADVANCE AND EXCEL IN THEIR CAREERS</h2>
+                    <p>We believe in meeting learners at their current skill level and guiding them toward greater expertise. Through our practical, industry-relevant training, we empower professionals to confidently take the next step in their careers.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/about-us/our-mission-img.png" alt="Our Mission">
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/about-us/our-vision.png" alt="Our Vision">
+                </div>
+                <div class="col-lg-6 pt-lg-5">
+                    <h4 class="h4">Our Vision</h4>
+                    <h2 class="h2">TO DRIVE GROWTH AND SUCCESS THROUGH KNOWLEDGE AND SKILL DEVELOPMENT</h2>
+                    <p>We envision a future where every learner has access to high-quality, certified training that unlocks new opportunities and maximizes potential in the industrial workforce.</p>
+                </div>
+                
+                <div class="col-lg-6 pt-lg-5">
+                    <h4 class="h4">Our Expertise</h4>
+                    <h2 class="h2">DEEP INDUSTRY KNOWLEDGE, REAL-WORLD APPLICATIONS</h2>
+                    <p>Our team consists of experienced trainers and industry experts who bring years of practical experience to the table. We craft training programs that mirror real-world scenarios, ensuring that our learners are prepared for the challenges of their fields.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/about-us/our-expertise.png" alt="Our Expertise">
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="./images/about-us/our-culture.png" alt="Our Culture">
+                </div>
+                <div class="col-lg-6 pt-lg-5">
+                    <h4 class="h4">Our Culture</h4>
+                    <h2 class="h2">INCLUSIVITY, GROWTH, AND A DRIVE FOR EXCELLENCE</h2>
+                    <p>At Industrial Certified Training, we cultivate an environment where curiosity is encouraged, and growth is celebrated. We value diverse perspectives, collaboration, and a passion for continuous learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-network">
+        <div class="container">
+            <h2 class="text-center mb-4">Join the trusted Network</h2>
+            <div class="network-slider px-4">
+                <div class="slider-item">
+                    <img src="images/home/us-army-logo.svg" alt="Army Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/fbi-logo.svg" alt="FBI Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/nasa-logo.svg" alt="NASA Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/water-meter.svg" alt="Water Meter Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/us-sailors-logo.svg" alt="US Sailors Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/pfizer-logo.svg" alt="Pfizer Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="typeform" id="typeform-section">
+        <div data-tf-live="01JFSV156N80ZSB11TZV2MEFP5"></div>
+    </section>
+
+    <section class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row w-100 mx-0 px-md-4 footer-main-row mb-4">
+                        <div class="col-md-4 align-self-center">
+                            <img src="./images/home/footer-logo.webp" alt="certified logo">
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/company/hazwoper-osha/" class="social-icon"><i class="fa-linkedin-in fab"></i></a>
+                                <a href="https://www.facebook.com/HazwoperOsha" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/hazwoper_osha_training/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/HazwoperOsha/" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                                <a href="https://www.pinterest.com/HazwoperOsha/" class="social-icon"><i class="fa-pinterest-p fab"></i></a>
+                                <a href="https://www.youtube.com/@hazwoper-osha" class="social-icon"><i class="fa-youtube fab"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 align-self-center text-center">
+                            <a href="#typeform-section" class="btn btn-outline-light ms-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="./index.html">Home</a></li>
+                        <li><a class="text-white" href="./about-us.html">About Us</a></li>
+                        <li><a class="text-white" href="./our-brands.html">Our Brands</a></li>
+                        <li><a class="text-white" href="./contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Address Company</h5>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-map-marker-alt"></i></span> 2715 Ash Dr. San Jose, South Dakota 83475</p>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-phone"></i></span><a href="tel: +1-866-429-6742" class="text-white"> 1-866-429-6742</a></p>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-envelope"></i></span> <a href="mailto:info@safetytraining.com" class="text-white">info@safetytraining.com</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center mt-4">
+                <div class="d-flex justify-content-center">
+                    <p class="mb-0 text-muted text-center">© 2024 Industrial Certified Training, LLC. All Rights Reserved.</p>
+                    <div class="d-flex justify-content-center d-none">
+                        <a href="#" class="text-decoration-none text-muted me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none text-muted me-3">Terms of Use</a>
+                        <a href="#" class="text-decoration-none text-muted">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load scripts at the end of the body with defer attribute -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="./js/script.js"></script>
+    <script src="//embed.typeform.com/next/embed.js" defer></script>
+</body>
+</html>

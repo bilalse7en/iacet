@@ -6,387 +6,383 @@
     <title>Responsive Training Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section class="nav-banner">
-    <div class="home-banner-bg">
-        <nav class="navbar navbar-expand-lg bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/certified-header-logo.png" alt="Logo" width="120">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="our-brands.html">Our Brands</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#typeform-section">Contact Us</a></li>
+    <div class="loader-container">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <!-- Outer rotating circle -->
+          <circle class="circle outer" cx="50" cy="50" r="45" />
+          
+          <!-- Inner rotating circle -->
+          <circle class="circle inner" cx="50" cy="50" r="25" />
+          
+          <!-- Pulsing dots -->
+          <circle class="dots" cx="50" cy="5" r="3" />
+          <circle class="dots" cx="95" cy="50" r="3" />
+          <circle class="dots" cx="50" cy="95" r="3" />
+          <circle class="dots" cx="5" cy="50" r="3" />
+        </svg>
+      </div>
+    <div class="progress" id="progress-bar">
+        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    
+    <section class="nav-banner">
+        <div class="home-banner-bg">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/home/certified-header-logo.webp" alt="Logo" width="120">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link active-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./our-brands.html">Our Brands</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="home-banner">
+                <div class="container py-5">
+                    <div class="row w-100 mx-0 align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4">Your Gateway to <br><span>Globally Recognized <br>Training Excellence</span></h1>
+                            <p class="lead">At Industrial Certified Training LLC, we empower individuals and organizations to achieve their professional goals with world-class training solutions. Specializing in industry-certified programs, we deliver the skills, knowledge, and certifications you need to thrive in an ever-evolving global landscape.</p>
+                            <a href="#typeform-section" class="btn btn-primary px-4 py-2 btn-sm rounded-3">Contact Us</a>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="images/home/home-banner-img.webp" alt="Training" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="my-4 mb-lg-5">
+                        <img src="images/home/iacet-logo.webp" alt="Accredited Provider" class="img-fluid" style="max-width: 200px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats__container">
+            <div class="stats__wrapper">
+                <div class="stats__item">
+                    <div class="stats__number-wrap">
+                        <span class="stats__number counter" data-target="5">0</span>
+                        <span class="stats__symbol">+</span>
+                    </div>
+                    <p class="stats__label">Years</p>
+                </div>
+                
+                <div class="stats__item">
+                    <div class="stats__number-wrap">
+                        <span class="stats__number counter" data-target="1000">0</span>
+                        <span class="stats__symbol">+</span>
+                    </div>
+                    <p class="stats__label">Trainings</p>
+                </div>
+                
+                <div class="stats__item">
+                    <div class="stats__number-wrap">
+                        <span class="stats__number counter" data-target="3.4">0</span>
+                        <span class="stats__symbol">M+</span>
+                    </div>
+                    <p class="stats__label">Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-network">
+        <div class="container">
+            <h2 class="text-center mb-4">Join the trusted Network</h2>
+            <div class="network-slider px-4">
+                <div class="slider-item">
+                    <img src="images/home/us-army-logo.svg" alt="Army Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/fbi-logo.svg" alt="FBI Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/nasa-logo.svg" alt="NASA Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/water-meter.svg" alt="Water Meter Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/us-sailors-logo.svg" alt="US Sailors Logo">
+                </div>
+                <div class="slider-item">
+                    <img src="images/home/pfizer-logo.svg" alt="Pfizer Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-we-offer">
+        <div class="container position-relative my-5">
+            <h6 class="text-uppercase text-center">services we offer</h6>
+            <h2 class="text-center">Solutions built for your industry</h2>
+            <div class="row w-100 mx-0 px-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title fw-bold h4">Tailored Learning<br> Solutions</div>
+                        <hr class="card-border">
+                        <p class="card-text">Customized training that fits your unique needs and goals.</p>
+                    </div>
+                    <img src="./images/home/tailored-learning-solution-img.webp" alt="Tailored Learning Solutions">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title fw-bold h4">Certified<br> Excellence</div>
+                        <hr class="card-border">
+                        <p class="card-text">Achieving top-tier standards through recognized expertise and certification.</p>
+                    </div>
+                    <img src="./images/home/certified-excellence-img.webp" alt="Certified Excellence">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title fw-bold h4">​Expert<br> Guidance</div>
+                        <hr class="card-border">
+                        <p class="card-text">Receive insights and support from industry leaders to steer your success.</p>
+                    </div>
+                    <img src="./images/home/expert-guidance-img.webp" alt="​Expert Guidance">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title fw-bold h4">Proven<br>Results</div>
+                        <hr class="card-border">
+                        <p class="card-text">Achieve measurable success backed by real-world outcomes and experience.</p>
+                    </div>
+                    <img src="./images/home/proven-results.webp" alt="Proven Results">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="we-work-with">
+        <div class="container">
+            <div class="mt-5 mt-lg-0 pt-5 pt-lg-0 row w-100 mx-0">
+                <div class="col-lg-6 mt-5 pt-5 text-white">
+                    <div class="col-lg-8">
+                        <h2 class="h2">We work with all types of workplaces</h2>
+                        <p>At Industrial Certified Training LLC, we empower individuals and organizations</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="./images/home/we-work-with-man-img.webp" alt="" width="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customized-training">
+        <div class="container text-center py-5">
+            <h2 class="section-title">Customized Training for Your Industry</h2>
+            <p class="section-subtitle">We provide tailored training solutions for a wide range of industries, ensuring compliance, safety, and efficiency.</p>
+            <div class="row w-100 mx-0">
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="card position-relative">
+                        <img src="./images/home/ct-construction.webp" class="card-img-top" alt="Construction">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Construction</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-maritime.webp" class="card-img-top" alt="Maritime">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Maritime</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-radiation.webp" class="card-img-top" alt="Radiation">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Radiation</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-heathcare.webp" class="card-img-top" alt="Healthcare">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Healthcare</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-oil-and-gas.webp" class="card-img-top" alt="Oil & Gas">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Oil & Gas</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-general-industry.webp" class="card-img-top" alt="General Industry">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">General Industry</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card position-relative">
+                        <img src="images/home/ct-hospitality.webp" class="card-img-top" alt="Hospitality">
+                        <div class="text-white bottom-0 card-body position-absolute w-100">
+                            <h5 class="card-title">Hospitality (Including Restaurants)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-reputation">
+        <div class="container pt-5">
+            <div class="row w-100 mx-0">
+                <div class="col-lg-4 col-xl-5 position-relative pe-xl-5">
+                    <h2 class="section-title pe-5">Our Reputation is immaculate</h2>
+                    <p class="section-subtitle pe-5">We provide tailored training solutions for a wide range of industries, ensuring compliance, safety, and efficiency.</p>
+                    <div class="d-flex slider-navigation">
+                        <button class="me-1 reputation-slick-prev shadow slick-arrow"><i class="fas fa-arrow-left"></i></button>
+                        <button class="ms-1 reputation-slick-next shadow slick-arrow"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8">
+                    <div class="reputation-slider">
+                        <div class="slider-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <h5>Steve Haefs</h5>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img src="./images/home/testimonial-img2.webp" alt="Inigo Martinez">
+                                </div>
+                            </div>
+                            <p>I feel the course was perfect for workers with prior exposure and experience with fall protection, ladders and aerial lifts. The course takes their knowledge and ability to the next level.</p>
+                        </div>
+                        <div class="slider-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <h5>Leah Davis</h5>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <span class="text-dark">4.5</span>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img src="./images/home/testimonial-img2.webp" alt="Kevin Onziema">
+                                </div>
+                            </div>
+                            <p>I learned a lot and have a better understanding of what my co-workers deal with on a day-to-day basis. I also can apply what I've learned during my project in person site visits, as well as on a personal level.</p>
+                        </div>
+                        <div class="slider-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <h5>Orville West</h5>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <span class="text-dark">4.5</span>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img src="./images/home/testimonial-img1.webp" alt="Kevin Onziema">
+                                </div>
+                            </div>
+                            <p>This course was informative and enlightening , would encourage any to participate in the training course.</p>
+                            <p>In carrying out your day to day job as an electrician or qualified electrical worker and applied these safety practices, we would have a safer more and productive work place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="typeform" id="typeform-section">
+        <div data-tf-live="01JFSV156N80ZSB11TZV2MEFP5"></div>
+    </section>
+
+    <section class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row w-100 mx-0 px-md-4 footer-main-row mb-4">
+                        <div class="col-md-4 align-self-center">
+                            <img src="./images/home/footer-logo.webp" alt="certified logo">
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/company/hazwoper-osha/" class="social-icon"><i class="fa-linkedin-in fab"></i></a>
+                                <a href="https://www.facebook.com/HazwoperOsha" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/hazwoper_osha_training/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/HazwoperOsha/" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                                <a href="https://www.pinterest.com/HazwoperOsha/" class="social-icon"><i class="fa-pinterest-p fab"></i></a>
+                                <a href="https://www.youtube.com/@hazwoper-osha" class="social-icon"><i class="fa-youtube fab"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 align-self-center text-center">
+                            <a href="#typeform-section" class="btn btn-outline-light ms-2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="./index.html">Home</a></li>
+                        <li><a class="text-white" href="./about-us.html">About Us</a></li>
+                        <li><a class="text-white" href="./our-brands.html">Our Brands</a></li>
+                        <li><a class="text-white" href="./contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <section class="home-banner">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="display-4">Your Gateway to <br><span>Globally Recognized <br>Training Excellence</span></h1>
-                        <p class="lead">At Industrial Certified Training LLC, we empower individuals and organizations to achieve their professional goals with world-class training solutions. Specializing in industry-certified programs, we deliver the skills, knowledge, and certifications you need to thrive in an ever-evolving global landscape.</p>
-                        <a href="#typeform-section" class="btn btn-primary px-4 py-2 btn-sm rounded-3">Contact Us</a>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="images/home-banner-img.png" alt="Training" class="img-fluid">
-                    </div>
-                </div>
-                <div class="my-4 mb-lg-5">
-                    <img src="images/iacet-logo.png" alt="Accredited Provider" class="img-fluid" style="max-width: 200px;">
+                <div class="col-md-6">
+                    <h5 class="mb-3">Address Company</h5>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-map-marker-alt"></i></span> 2715 Ash Dr. San Jose, South Dakota 83475</p>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-phone"></i></span><a href="tel: +1-866-429-6742" class="text-white"> 1-866-429-6742</a></p>
+                    <p class="align-items-center d-flex"><span class="social-icon me-3"><i class="fas fa-envelope"></i></span> <a href="mailto:info@safetytraining.com" class="text-white">info@safetytraining.com</a></p>
                 </div>
             </div>
-        </section>
-    </div>
-</section>
-<section class="stats">
-    <div class="stats__container">
-        <div class="stats__wrapper">
-            <div class="stats__item">
-                <div class="stats__number-wrap">
-                    <span class="stats__number counter" data-target="5">0</span>
-                    <span class="stats__symbol">+</span>
-                </div>
-                <p class="stats__label">Years</p>
-            </div>
-            
-            <div class="stats__item">
-                <div class="stats__number-wrap">
-                    <span class="stats__number counter" data-target="1000">0</span>
-                    <span class="stats__symbol">+</span>
-                </div>
-                <p class="stats__label">Trainings</p>
-            </div>
-            
-            <div class="stats__item">
-                <div class="stats__number-wrap">
-                    <span class="stats__number counter" data-target="3.4">0</span>
-                    <span class="stats__symbol">M+</span>
-                </div>
-                <p class="stats__label">Courses</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="trusted-network">
-    <div class="container">
-        <h2 class="text-center mb-4">Join the trusted Network</h2>
-        <div class="network-slider">
-            <div class="slider-item">
-                <img src="images/us-army-logo.svg" alt="Army Logo">
-            </div>
-            <div class="slider-item">
-                <img src="images/fbi-logo.svg" alt="FBI Logo">
-            </div>
-            <div class="slider-item">
-                <img src="images/nasa-logo.svg" alt="NASA Logo">
-            </div>
-            <div class="slider-item">
-                <img src="images/water-meter.svg" alt="Water Meter Logo">
-            </div>
-            <div class="slider-item">
-                <img src="images/us-sailors-logo.svg" alt="US Sailors Logo">
-            </div>
-            <div class="slider-item">
-                <img src="images/pfizer-logo.svg" alt="Pfizer Logo">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="services-we-offer">
-    <div class="container position-relative my-5">
-        <h6 class="text-uppercase text-center">services we offer</h6>
-        <h2 class="text-center">Solutions built for your industry</h2>
-        <div class="row w-100 mx-0">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title fw-bold h4">Tailored Learning<br> Solutions</div>
-                    <hr class="card-border">
-                    <p class="card-text">Customized training that fits your unique needs and goals.</p>
-                </div>
-                <img src="./images/tailored-learning-solution-img.png" alt="Tailored Learning Solutions">
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title fw-bold h4">Certified<br> Excellence</div>
-                    <hr class="card-border">
-                    <p class="card-text">Achieving top-tier standards through recognized expertise and certification.</p>
-                </div>
-                <img src="./images/certified-excellence-img.png" alt="Certified Excellence">
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title fw-bold h4">​Expert<br> Guidance</div>
-                    <hr class="card-border">
-                    <p class="card-text">Receive insights and support from industry leaders to steer your success.</p>
-                </div>
-                <img src="./images/expert-guidance-img.png" alt="​Expert Guidance">
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title fw-bold h4">Proven<br>Results</div>
-                    <hr class="card-border">
-                    <p class="card-text">Achieve measurable success backed by real-world outcomes and experience.</p>
-                    <a href="#typeform-section" class="card-link mb-0 text-uppercase">Reach Out<i class="fab fa-arrow-right"></i></a>
-                </div>
-                <img src="./images/expert-guidance-img.png" alt="Proven Results">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="we-work-with">
-    <div class="container">
-        <div class="mt-5 mt-lg-0 pt-5 pt-lg-0 row">
-            <div class="col-lg-6 mt-5 pt-5 text-white">
-                <div class="col-lg-8">
-                    <h2 class="h2">We work with all types of workplaces</h2>
-                    <p>At Industrial Certified Training LLC, we empower individuals and organizations</p>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="./images/we-work-with-man-img.png" alt="" width="300">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="customized-training">
-    <div class="container text-center py-5">
-        <h2 class="section-title">Customized Training for Your Industry</h2>
-        <p class="section-subtitle">We provide tailored training solutions for a wide range of industries, ensuring compliance, safety, and efficiency.</p>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 mb-4">
-                <div class="card position-relative">
-                    <img src="./images/ct-construction.png" class="card-img-top" alt="Construction">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Construction</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-maritime.png" class="card-img-top" alt="Maritime">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Maritime</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-radiation.png" class="card-img-top" alt="Radiation">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Radiation</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-heathcare.png" class="card-img-top" alt="Healthcare">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Healthcare</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-oil-and-gas.png" class="card-img-top" alt="Oil & Gas">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Oil & Gas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-general-industry.png" class="card-img-top" alt="General Industry">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">General Industry</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card position-relative">
-                    <img src="images/ct-hospitality.png" class="card-img-top" alt="Hospitality">
-                    <div class="text-white bottom-0 card-body position-absolute w-100">
-                        <h5 class="card-title">Hospitality (Including Restaurants)</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="our-reputation">
-    <div class="container py-5">
-        <div class="row w-100 mx-0">
-            <div class="col-lg-4 col-xl-5 position-relative pe-xl-5">
-                <h2 class="section-title pe-5">Our Reputation is immaculate</h2>
-                <p class="section-subtitle pe-5">We provide tailored training solutions for a wide range of industries, ensuring compliance, safety, and efficiency.</p>
-                <div class="d-flex slider-navigation">
-                    <button class="me-1 reputation-slick-prev shadow slick-arrow"><i class="fas fa-arrow-left"></i></button>
-                    <button class="ms-1 reputation-slick-next shadow slick-arrow"><i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-8">
-                <div class="reputation-slider">
-                    <div class="slider-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="rating">
-                                <h5>Inigo Martinez</h5>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span class="text-dark">5.0</span>
-                            </div>
-                            <div class="testimonial-img">
-                                <img src="./images/testimonial-img1.png" alt="Inigo Martinez">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab accusantium enim reprehenderit cupiditate! Quos rerum magnam iusto voluptate sit repellat commodi earum vel velit iste. Adipisci recusandae est non consequatur!</p>
-                    </div>
-                    <div class="slider-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="rating">
-                                <h5>Kevin Onziema</h5>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                                <span class="text-dark">4.5</span>
-                            </div>
-                            <div class="testimonial-img">
-                                <img src="./images/testimonial-img2.png" alt="Kevin Onziema">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum quasi totam molestiae culpa, ipsam architecto ratione corrupti, iste fuga doloremque illo. Illo minus atque neque provident velit voluptatum quidem.</p>
-                    </div>
-                    <div class="slider-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="rating">
-                                <h5>Kevin Onziema</h5>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                                <span class="text-dark">4.5</span>
-                            </div>
-                            <div class="testimonial-img">
-                                <img src="./images/testimonial-img2.png" alt="Kevin Onziema">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam a illo, sunt excepturi minima, numquam enim eum perferendis quis laborum id, maxime velit molestiae. Deserunt a voluptas quaerat nihil! Itaque.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="typeform" id="typeform-section">
-    <div data-tf-live="01JFSV156N80ZSB11TZV2MEFP5"></div>
-</section>
-
-<section class="footer-section bg-dark text-white py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row w-100 m-0 px-md-4 footer-main-row mb-4">
-                    <div class="col-md-4 align-self-center">
-                        <img src="./images/footer-logo.png" alt="">
-                    </div>
-                    <div class="col-md-4 align-self-center">
-                        <div class="social-icons">
-                            <a href="#" class="social-icon"><i class="fa-linkedin-in fab"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fa-pinterest-p fab"></i></a>
-                            <a href="#" class="social-icon"><i class="fa-youtube fab"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 align-self-center text-center">
-                        <a href="#" class="btn btn-primary">Get a demo</a>
-                        <a href="#" class="btn btn-outline-light ms-2">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h5 class="mb-3">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">About Us</a></li>
-                    <li><a href="#" class="text-white">News</a></li>
-                    <li><a href="#" class="text-white">Careers</a></li>
-                    <li><a href="#" class="text-white">Partnerships</a></li>
-                    <li><a href="#" class="text-white">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5 class="mb-3">Address Company</h5>
-                <p class="align-items-center d-inline-flex"><span class="social-icon me-3"><i class="fas fa-map-marker-alt"></i></span> 2715 Ash Dr. San Jose, South Dakota 83475</p>
-                <p class="align-items-center d-inline-flex"><span class="social-icon me-3"><i class="fas fa-phone"></i></span> 1-866-429-6742</p>
-                <p class="align-items-center d-inline-flex"><span class="social-icon me-3"><i class="fas fa-envelope"></i></span> <a href="mailto:info@safetytraining.com" class="text-white">info@safetytraining.com</a></p>
-            </div>
-            <div class="col-md-4">
-                <h5 class="mb-3">Subscribe Newsletter</h5>
-                <p>Subscribe to receive the latest news from us, we make sure not to spam your inbox.</p>
-                <form>
-                    <div class="input-group subscribe-input">
-                        <input type="email" class="form-control" placeholder="Email Address" required>
-                        <button class="btn btn-primary end-0" type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="text-center mt-4">
-            <div class="d-flex justify-content-between">
-                <p class="mb-0 text-muted">Copyright © 2024 Graviton by MuhibitWaliSah. All Rights Reserved.</p>
+            <hr>
+            <div class="text-center mt-4">
                 <div class="d-flex justify-content-center">
-                    <a href="#" class="text-decoration-none text-muted me-3">Privacy Policy</a>
-                    <a href="#" class="text-decoration-none text-muted me-3">Terms of Use</a>
-                    <a href="#" class="text-decoration-none text-muted">Sitemap</a>
+                    <p class="mb-0 text-muted text-center">© 2024 Industrial Certified Training, LLC. All Rights Reserved.</p>
+                    <div class="d-flex justify-content-center d-none">
+                        <a href="#" class="text-decoration-none text-muted me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none text-muted me-3">Terms of Use</a>
+                        <a href="#" class="text-decoration-none text-muted">Sitemap</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Load scripts at the end of the body with defer attribute -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script src="./js/script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script defer src="//embed.typeform.com/next/embed.js"></script>
-    
-    
-    <script>
-    // Smooth scroll to Typeform section
-    document.querySelectorAll('a[href="#typeform-section"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector('#typeform-section').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    </script>
+    <script src="//embed.typeform.com/next/embed.js" defer></script>
     
 </body>
 </html>
-    
